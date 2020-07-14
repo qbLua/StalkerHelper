@@ -1,0 +1,8 @@
+.Menu-list {
+    list-style-type: none;
+    padding-top: 20%;
+  }
+  
+  .Menu-list a {
+    text-decoration: none;
+  }
