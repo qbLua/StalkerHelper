@@ -2,9 +2,9 @@ import React from 'react';
 import './Select_item.css'
 
 const Select_item = (props) => {
+  let i = -1;
+  const params = (props.params).map((param) => (i++, <tr><td>{param}</td><td>{props.values[i]}</td></tr>));
   
-  const params = (props.params).map((param) => <td>{param}</td>);
-  const values = (props.values).map((value) => <td>{value}</td>);
 
   return (
     <div className="select_item">
@@ -17,12 +17,7 @@ const Select_item = (props) => {
         </div>
         <div className="select_item_desc">
           <table>
-            <tr>
               {params}
-            </tr>
-            <tr>
-              {values}
-            </tr>
           </table>
         </div>
       </div>

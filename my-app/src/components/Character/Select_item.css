@@ -5,5 +5,19 @@
 
 .select_item_grid {
     display: grid;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 4fr 2fr 4fr 4fr;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.select_item_img {
+    grid-column-start: 2;
+}
+
+.select_item_desc {
+    grid-column-start: 3;
+}
+
+.select_item_desc td {
+    text-align: left;
 }
