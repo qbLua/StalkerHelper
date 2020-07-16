@@ -1,0 +1,9 @@
+.select_item {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.select_item_grid {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
