@@ -1,6 +1,6 @@
 
 import React from 'react';
-import '../css_components/Artefacts.css'
+import './Artefacts.css'
 
 const Artefacts = () => {
     return(

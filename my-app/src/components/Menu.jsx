@@ -1,18 +1,20 @@
 import React from 'react';
-import '../css_components/Menu.css'
+import './Menu.css'
+import {NavLink, Route} from "react-router-dom";
+import Character from './Character/Character';
 
 const Menu = () => {
     return(
     <div className="Menu">
         <ul className="Menu-list">
         <li className="Menu-map">
-          <a href="#">Map</a>
+          <NavLink to="/map">Map</NavLink>
         </li>
         <li className="Menu-character"> 
-          <a href="#">Character</a>
+          <NavLink to="/character">Character</NavLink>
         </li>
         <li className="Menu-bag">
-          <a href="#">Bag</a>
+          <NavLink to="/bag">Bag</NavLink>
         </li>
       </ul>
     </div>

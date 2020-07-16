@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css_components/Suit.css'
+import './Suit.css'
 
 const Suit = () => {
     return(

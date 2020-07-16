@@ -1,0 +1,36 @@
+.Character_gun {
+    padding-top: 30px;
+}
+
+.Character_suit {
+    padding-top: 30px;
+}
+
+.Character_artefacts {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40% 20% 40%;
+}
+
+.artefact_1 {
+    grid-column-start: 4;
+}
+
+.artefact_2 {
+    grid-column-start: 5;
+}
+
+.artefact_3 {
+    grid-column-start: 6;
+}
+
+.artefact_4 {
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+.artefact_5 {
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
