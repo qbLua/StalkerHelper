@@ -21,3 +21,11 @@
 .select_item_desc td {
     text-align: left;
 }
+
+.select_hide {
+    display: none;
+}
+
+.select_table_space {
+    width: 20px;
+}
