@@ -22,7 +22,7 @@ const params = (props.params).map((param) => (i++, (props.values[i] == '' ? <spa
         </div>
       </div>
       <div className="select_item_btn">
-        <button onClick="Take()">Take this</button>
+        <button onClick={()=>Take(props.slot, props.img)}>Take this</button>
       </div>
     </div>
     );

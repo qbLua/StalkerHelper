@@ -22,21 +22,21 @@ const Gun_select = () => {
 
     return (
         <div>
-            <Select_item name='АКМ-74/2' img='Иконка_АКМ' params={params}  values={values_1}  />
-            <Select_item name='Бульдог-6' img='Иконка_Бульдога-6' params={params}  values={values_2}  />
-            <Select_item name='Винтарь-ВС' img='Иконка_Винтарь-ВС' params={params}  values={values_3}  />
-            <Select_item name='Гадюка-5' img='Гадюка-5' params={params}  values={values_4}  />
-            <Select_item name='Гаусс-пушка' img='Иконка_гаусс-пушки' params={params}  values={values_5}  />
-            <Select_item name='ГП37' img='ГП37' params={params}  values={values_6}  />
-            <Select_item name='Гром-С14' img='Гром-С14' params={params}  values={values_7}  />
-            <Select_item name='ИЛ86' img='ИЛ86' params={params}  values={values_8}  />
-            <Select_item name='Обрез' img='Иконка_обреза' params={params}  values={values_9}  />
-            <Select_item name='РПГ-7у' img='Иконка_РПГ-7у' params={params}  values={values_10}  />
-            <Select_item name='СА «ЛАВИНА»' img='Иконка_СА_«Лавина»' params={params}  values={values_11}  />
-            <Select_item name='СВДм-2' img='Иконка_СВДм-2' params={params}  values={values_12}  />
-            <Select_item name='СПСА-14' img='Иконка_СПСА-14' params={params}  values={values_13}  />
-            <Select_item name='ТРс-301' img='Иконка_ТРс-301_ТЧ' params={params}  values={values_14}  />
-            <Select_item name='ФТ-200М' img='ФТ-200М' params={params}  values={values_15}  />
+            <Select_item name='АКМ-74/2' img='Иконка_АКМ' params={params}  values={values_1} slot='gun_img' />
+            <Select_item name='Бульдог-6' img='Иконка_Бульдога-6' params={params}  values={values_2} slot='gun_img' />
+            <Select_item name='Винтарь-ВС' img='Иконка_Винтарь-ВС' params={params}  values={values_3} slot='gun_img' />
+            <Select_item name='Гадюка-5' img='Гадюка-5' params={params}  values={values_4} slot='gun_img' />
+            <Select_item name='Гаусс-пушка' img='Иконка_гаусс-пушки' params={params}  values={values_5} slot='gun_img' />
+            <Select_item name='ГП37' img='ГП37' params={params}  values={values_6} slot='gun_img' />
+            <Select_item name='Гром-С14' img='Гром-С14' params={params}  values={values_7} slot='gun_img' />
+            <Select_item name='ИЛ86' img='ИЛ86' params={params}  values={values_8} slot='gun_img' />
+            <Select_item name='Обрез' img='Иконка_обреза' params={params}  values={values_9} slot='gun_img' />
+            <Select_item name='РПГ-7у' img='Иконка_РПГ-7у' params={params}  values={values_10} slot='gun_img' />
+            <Select_item name='СА «ЛАВИНА»' img='Иконка_СА_«Лавина»' params={params}  values={values_11} slot='gun_img' />
+            <Select_item name='СВДм-2' img='Иконка_СВДм-2' params={params}  values={values_12} slot='gun_img' />
+            <Select_item name='СПСА-14' img='Иконка_СПСА-14' params={params}  values={values_13} slot='gun_img' />
+            <Select_item name='ТРс-301' img='Иконка_ТРс-301_ТЧ' params={params}  values={values_14} slot='gun_img' />
+            <Select_item name='ФТ-200М' img='ФТ-200М' params={params}  values={values_15} slot='gun_img' />
         </div>
     );
 }
