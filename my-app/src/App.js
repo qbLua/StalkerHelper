@@ -9,6 +9,7 @@ import Suit_select from './components/Character/Suit/Suit_select';
 import Artefacts_select from './components/Character/Artefacts/Artefacts_select';
 import No404 from './components/No404';
 import Store_character from './components/Character/Store_character';
+import Select_location from './components/Map/Select_location';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             (window.location + '').slice(-2) == '/4' ? <Artefacts_select slot = '4' /> :
             (window.location + '').slice(-2) == '/5' ? <Artefacts_select slot = '5' /> :
             <No404 />} />
+        <Route exact path="/map" component={Select_location} />
         </div>
 
     </BrowserRouter>
