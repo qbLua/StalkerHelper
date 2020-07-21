@@ -10,6 +10,7 @@ import Artefacts_select from './components/Character/Artefacts/Artefacts_select'
 import No404 from './components/No404';
 import Store_character from './components/Character/Store_character';
 import Select_location from './components/Map/Select_location';
+import Bag from './components/Bag/Bag';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             (window.location + '').slice(-2) == '/5' ? <Artefacts_select slot = '5' /> :
             <No404 />} />
         <Route exact path="/map" component={Select_location} />
+        <Route exact path="/bag" component={Bag} />
         </div>
 
     </BrowserRouter>
