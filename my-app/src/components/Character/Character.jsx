@@ -1,19 +1,14 @@
 import React from 'react';
 import './Character.css'
-import Gun from './Gun/Gun';
-import Suit from './Suit/Suit';
-import Artefacts from './Artefacts/Artefacts';
 import Item from '../Item';
 import Store_character from './Store_character';
-import {Provider} from "./Store_character";
+
 
 const Character = () => {
- 
     return(
         <Store_character.Consumer>
           {
             (value) => {
-              console.log(value)
               return (
               <div className="Character">
                 <div className="Character_gun">

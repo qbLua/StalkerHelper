@@ -21,8 +21,19 @@ const Bag = (props) => {
     const item15 = ['15', '5,56x45 мм AP', 'Иконка_5,56AP', '0'];
     const item16 = ['16', 'Граната ВОГ-25', 'Граната_ВОГ-25(ico)', '0'];
     const item17 = ['17', 'Граната ВОГ-25P', 'ВОГ-25Р(ico)', '0'];
-    const item18 = ['18', 'Граната ВОГ-25P', 'ВОГ-25Р(ico)', '0'];
-   // const item1 = ['id', 'name', 'img', 'val'];
+    const item18 = ['18', '7,62БП', 'Иконка_7,62_БП', '0'];
+    const item19 = ['19', 'name', 'Иконка_7,62_7Н14', '0'];
+    const item20 = ['20', 'name', 'Иконка_7,62_7Н1', '0'];
+    const item21 = ['21', 'name', 'Граната_ОГ-7B(ico)', '0'];
+    const item22 = ['22', 'name', 'Иконка_9х39-ПАБ-9', '0'];
+    const item23 = ['23', 'name', 'Иконка_9х39-СП-5', '0'];
+    const item24 = ['24', 'name', 'Иконка_9х39-СП-6', '0'];
+    const item25 = ['25', 'name', 'Иконка_9х19_JHP', '0'];
+    const item26 = ['26', 'name', 'Иконка_9х19_FMJ', '0'];
+    const item27 = ['27', 'name', 'Граната_M203(ico)', '0'];
+    const item28 = ['28', 'name', 'Иконка_5,45_БП', '0'];
+    const item29 = ['29', 'name', 'Иконка_5,56', '0'];
+
 
     return(
         <div className="Bag">
@@ -44,6 +55,17 @@ const Bag = (props) => {
             <Bag_item id={item16[0]} name={item16[1]} img={item16[2]} val={item16[3]} />
             <Bag_item id={item17[0]} name={item17[1]} img={item17[2]} val={item17[3]} />
             <Bag_item id={item18[0]} name={item18[1]} img={item18[2]} val={item18[3]} />
+            <Bag_item id={item19[0]} name={item19[1]} img={item19[2]} val={item19[3]} />
+            <Bag_item id={item20[0]} name={item20[1]} img={item20[2]} val={item20[3]} />
+            <Bag_item id={item21[0]} name={item21[1]} img={item21[2]} val={item21[3]} />
+            <Bag_item id={item22[0]} name={item22[1]} img={item22[2]} val={item22[3]} />
+            <Bag_item id={item23[0]} name={item23[1]} img={item23[2]} val={item23[3]} />
+            <Bag_item id={item24[0]} name={item24[1]} img={item24[2]} val={item24[3]} />
+            <Bag_item id={item25[0]} name={item25[1]} img={item25[2]} val={item25[3]} />
+            <Bag_item id={item26[0]} name={item26[1]} img={item26[2]} val={item26[3]} />
+            <Bag_item id={item27[0]} name={item27[1]} img={item27[2]} val={item27[3]} />
+            <Bag_item id={item28[0]} name={item28[1]} img={item28[2]} val={item28[3]} />
+            <Bag_item id={item29[0]} name={item29[1]} img={item29[2]} val={item29[3]} />
         </div>
 
     );

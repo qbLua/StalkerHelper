@@ -1,8 +1,10 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 import '../../css/Location.css';
+import { Location_stats } from '../Logics/Logics.js';
 
 const Location = (props) => {
+    Location_stats(props.stats);
     const groups = (props.groups).map((group) => { 
         if (group == props.groups[0]) {
             return (

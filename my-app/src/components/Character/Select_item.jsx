@@ -1,11 +1,10 @@
 import React from 'react';
 import './Select_item.css'
 import Take from '../Take'
+
 const Select_item = (props) => {
   let i = -1;
-const params = (props.params).map((param) => (i++, (props.values[i] == '' ? <span className="select_hide"></span> : <tr><td className="select_table_space"></td><td>{param}</td><td className="select_table_space"></td><td className="select_table_space"></td><td>{props.values[i]}</td></tr>)));
-  //params += props.params[(props.params).length - 1]
-
+  const params = (props.params).map((param) => (i++, (props.values[i] == '' ? <span className="select_hide"></span> : <tr><td className="select_table_space"></td><td>{param}</td><td className="select_table_space"></td><td className="select_table_space"></td><td>{props.values[i]}</td></tr>)));
   return (
     <div className="select_item">
       <div className="select_item_name">
@@ -22,7 +21,7 @@ const params = (props.params).map((param) => (i++, (props.values[i] == '' ? <spa
         </div>
       </div>
       <div className="select_item_btn">
-        <button onClick={()=>Take(props.slot, props.img)}>Take this</button>
+        <button onClick={()=>Take(`${props.slot}_img`, props.img, props.slot, props.values)}>Take this</button>
       </div>
     </div>
     );

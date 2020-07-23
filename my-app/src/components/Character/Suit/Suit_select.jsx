@@ -17,25 +17,23 @@ const Suit_select = () => {
     const values_12 = ['50%', '50%', '50%', '50%', '50%', '50%', '40%', '40%', '14000 RU'];
     const values_13 = ['90%', '90%', '50%', '15%', '90%', '90%', '40%', '20%', '15000 RU'];
     const values_14 = ['50%', '50%', '90%', '80%', '30%', '50%', '80%', '60%', '50000 RU'];
-
-    
     
     return (
         <div>
-            <Select_item name='Армейский бронежилет' img='Армейский_бронежилет(ico)' params={params}  values={values_1} slot='suit_img' />
-            <Select_item name='Куртка бандита"' img='Иконка_куртки_бандита' params={params}  values={values_2} slot='suit_img' />
-            <Select_item name='Бронекостюм «Берилл-5М»' img='Старая_иконка_Берилл' params={params}  values={values_3} slot='suit_img' />
-            <Select_item name='Бронекостюм «Булат»' img='Старая_иконка_Булата' params={params}  values={values_4} slot='suit_img' />
-            <Select_item name='Кожаная куртка' img='Иконка_кожаной_куртки' params={params}  values={values_5} slot='suit_img' />
-            <Select_item name='Комбинезон «Ветер свободы»' img='Старая_иконка_Ветра_свободы' params={params}  values={values_6} slot='suit_img' />
-            <Select_item name='Комбинезон «Заря»' img='Старая_иконка_Зари' params={params}  values={values_7} slot='suit_img' />
-            <Select_item name='Комбинезон «Монолита»' img='Иконка_комбинезона_Монолита' params={params}  values={values_8} slot='suit_img' />
-            <Select_item name='Комбинезон «СЕВА»' img='Иконка_комбинезона_СЕВА' params={params}  values={values_9} slot='suit_img' />
-            <Select_item name='Комбинезон «Страж свободы»' img='Иконка_комбинезона_Страж_свободы' params={params}  values={values_10} slot='suit_img' />
-            <Select_item name='Комбинезон ССП-99М' img='Иконка_ССП-99М' params={params}  values={values_11} slot='suit_img' />
-            <Select_item name='ПСЗ-9д «Броня "Долга"»' img='Старая_иконка_ПС5-М' params={params}  values={values_12} slot='suit_img' />
-            <Select_item name='ССП-99 «Эколог»' img='Иконка_ССП-99' params={params}  values={values_13} slot='suit_img' />
-            <Select_item name='Экзоскелет' img='Старая_иконка_экзоскелета' params={params}  values={values_14} slot='suit_img' />
+            <Select_item name='Армейский бронежилет' img='Армейский_бронежилет(ico)' params={params}  values={values_1} slot='suit' />
+            <Select_item name='Куртка бандита"' img='Иконка_куртки_бандита' params={params}  values={values_2} slot='suit' />
+            <Select_item name='Бронекостюм «Берилл-5М»' img='Старая_иконка_Берилл' params={params}  values={values_3} slot='suit' />
+            <Select_item name='Бронекостюм «Булат»' img='Старая_иконка_Булата' params={params}  values={values_4} slot='suit' />
+            <Select_item name='Кожаная куртка' img='Иконка_кожаной_куртки' params={params}  values={values_5} slot='suit' />
+            <Select_item name='Комбинезон «Ветер свободы»' img='Старая_иконка_Ветра_свободы' params={params}  values={values_6} slot='suit' />
+            <Select_item name='Комбинезон «Заря»' img='Старая_иконка_Зари' params={params}  values={values_7} slot='suit' />
+            <Select_item name='Комбинезон «Монолита»' img='Иконка_комбинезона_Монолита' params={params}  values={values_8} slot='suit' />
+            <Select_item name='Комбинезон «СЕВА»' img='Иконка_комбинезона_СЕВА' params={params}  values={values_9} slot='suit' />
+            <Select_item name='Комбинезон «Страж свободы»' img='Иконка_комбинезона_Страж_свободы' params={params}  values={values_10} slot='suit' />
+            <Select_item name='Комбинезон ССП-99М' img='Иконка_ССП-99М' params={params}  values={values_11} slot='suit' />
+            <Select_item name='ПСЗ-9д «Броня "Долга"»' img='Старая_иконка_ПС5-М' params={params}  values={values_12} slot='suit' />
+            <Select_item name='ССП-99 «Эколог»' img='Иконка_ССП-99' params={params}  values={values_13} slot='suit' />
+            <Select_item name='Экзоскелет' img='Старая_иконка_экзоскелета' params={params}  values={values_14} slot='suit' />
         </div>
     );
 }

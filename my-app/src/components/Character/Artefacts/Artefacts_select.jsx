@@ -34,32 +34,32 @@ const Artefacts_select = (props) => {
     
     return (
         <div>
-            <Select_item name='Бенгальский огонь' img='Бенгальский_огонь(ico)' params={params}  values={values_1} slot={`art${props.slot}_img`} />
-            <Select_item name='Вспышка' img='Вспышка(ico)' params={params}  values={values_2} slot={`art${props.slot}_img`} />
-            <Select_item name='Лунный свет' img='Лунный_свет(ico)' params={params}  values={values_3} slot={`art${props.slot}_img`} />
-            <Select_item name='Кровь камня' img='Кровь_камня(ico)' params={params}  values={values_4} slot={`art${props.slot}_img`} />
-            <Select_item name='Ломоть мяса' img='Ломоть_мяса(ico)' params={params}  values={values_5} slot={`art${props.slot}_img`} />
-            <Select_item name='Душа' img='Душа(ico)' params={params}  values={values_6} slot={`art${props.slot}_img`} />
-            <Select_item name='Слизь' img='Слизь(ico)' params={params}  values={values_7} slot={`art${props.slot}_img`} />
-            <Select_item name='Слизняк' img='Слизняк(ico)' params={params}  values={values_8} slot={`art${props.slot}_img`} />
-            <Select_item name='Слюда' img='Слюда(ico)' params={params}  values={values_9} slot={`art${props.slot}_img`} />
-            <Select_item name='Медуза' img='Медуза(ico)' params={params}  values={values_10} slot={`art${props.slot}_img`} />
-            <Select_item name='Каменный цветок' img='Каменный_цветок(ico)' params={params}  values={values_11} slot={`art${props.slot}_img`} />
-            <Select_item name='Ночная звезда' img='Ночная_звезда(ico)' params={params}  values={values_12} slot={`art${props.slot}_img`} />
-            <Select_item name='Выверт' img='Выверт(ico)' params={params}  values={values_13} slot={`art${props.slot}_img`} />
-            <Select_item name='Грави' img='Грави(ico)' params={params}  values={values_14} slot={`art${props.slot}_img`} />
-            <Select_item name='Золотая рыбка' img='Золотая_рыбка(ico)' params={params}  values={values_15} slot={`art${props.slot}_img`} />
-            <Select_item name='Колобок' img='Колобок(ico)' params={params}  values={values_16} slot={`art${props.slot}_img`} />
-            <Select_item name='Колючка' img='Колючка(ico)' params={params}  values={values_17} slot={`art${props.slot}_img`} />
-            <Select_item name='Кристальная колючка' img='Кристальная_колючка(ico)' params={params}  values={values_18} slot={`art${props.slot}_img`} />
-            <Select_item name='Морской ёж' img='Морской_ёж(ico)' params={params}  values={values_19} slot={`art${props.slot}_img`} />
-            <Select_item name='Капли' img='Капли(ico)' params={params}  values={values_20} slot={`art${props.slot}_img`} />
-            <Select_item name='Огненный шар' img='Огненный_шар(ico)' params={params}  values={values_21} slot={`art${props.slot}_img`} />
-            <Select_item name='Кристалл' img='Кристалл(ico)' params={params}  values={values_22} slot={`art${props.slot}_img`} />
-            <Select_item name='Пустышка' img='Пустышка(ico)' params={params}  values={values_23} slot={`art${props.slot}_img`} />
-            <Select_item name='Плёнка' img='Плёнка(ico)' params={params}  values={values_24} slot={`art${props.slot}_img`} />
-            <Select_item name='Пружина' img='Пружина(ico)' params={params}  values={values_25} slot={`art${props.slot}_img`} />
-            <Select_item name='Батарейка' img='Батарейка(ico)' params={params}  values={values_26} slot={`art${props.slot}_img`} />
+            <Select_item name='Бенгальский огонь' img='Бенгальский_огонь(ico)' params={params}  values={values_1} slot={`art${props.slot}`} />
+            <Select_item name='Вспышка' img='Вспышка(ico)' params={params}  values={values_2} slot={`art${props.slot}`} />
+            <Select_item name='Лунный свет' img='Лунный_свет(ico)' params={params}  values={values_3} slot={`art${props.slot}`} />
+            <Select_item name='Кровь камня' img='Кровь_камня(ico)' params={params}  values={values_4} slot={`art${props.slot}`} />
+            <Select_item name='Ломоть мяса' img='Ломоть_мяса(ico)' params={params}  values={values_5} slot={`art${props.slot}`} />
+            <Select_item name='Душа' img='Душа(ico)' params={params}  values={values_6} slot={`art${props.slot}`} />
+            <Select_item name='Слизь' img='Слизь(ico)' params={params}  values={values_7} slot={`art${props.slot}`} />
+            <Select_item name='Слизняк' img='Слизняк(ico)' params={params}  values={values_8} slot={`art${props.slot}`} />
+            <Select_item name='Слюда' img='Слюда(ico)' params={params}  values={values_9} slot={`art${props.slot}`} />
+            <Select_item name='Медуза' img='Медуза(ico)' params={params}  values={values_10} slot={`art${props.slot}`} />
+            <Select_item name='Каменный цветок' img='Каменный_цветок(ico)' params={params}  values={values_11} slot={`art${props.slot}`} />
+            <Select_item name='Ночная звезда' img='Ночная_звезда(ico)' params={params}  values={values_12} slot={`art${props.slot}`} />
+            <Select_item name='Выверт' img='Выверт(ico)' params={params}  values={values_13} slot={`art${props.slot}`} />
+            <Select_item name='Грави' img='Грави(ico)' params={params}  values={values_14} slot={`art${props.slot}`} />
+            <Select_item name='Золотая рыбка' img='Золотая_рыбка(ico)' params={params}  values={values_15} slot={`art${props.slot}`} />
+            <Select_item name='Колобок' img='Колобок(ico)' params={params}  values={values_16} slot={`art${props.slot}`} />
+            <Select_item name='Колючка' img='Колючка(ico)' params={params}  values={values_17} slot={`art${props.slot}`} />
+            <Select_item name='Кристальная колючка' img='Кристальная_колючка(ico)' params={params}  values={values_18} slot={`art${props.slot}`} />
+            <Select_item name='Морской ёж' img='Морской_ёж(ico)' params={params}  values={values_19} slot={`art${props.slot}`} />
+            <Select_item name='Капли' img='Капли(ico)' params={params}  values={values_20} slot={`art${props.slot}`} />
+            <Select_item name='Огненный шар' img='Огненный_шар(ico)' params={params}  values={values_21} slot={`art${props.slot}`} />
+            <Select_item name='Кристалл' img='Кристалл(ico)' params={params}  values={values_22} slot={`art${props.slot}`} />
+            <Select_item name='Пустышка' img='Пустышка(ico)' params={params}  values={values_23} slot={`art${props.slot}`} />
+            <Select_item name='Плёнка' img='Плёнка(ico)' params={params}  values={values_24} slot={`art${props.slot}`} />
+            <Select_item name='Пружина' img='Пружина(ico)' params={params}  values={values_25} slot={`art${props.slot}`} />
+            <Select_item name='Батарейка' img='Батарейка(ico)' params={params}  values={values_26} slot={`art${props.slot}`} />
         </div>
     );
 }
