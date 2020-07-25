@@ -1,6 +1,10 @@
+import React from 'react';
+import Result from '../Result';
+
 export const Location_stats = (stats) => {
     locations[`i${stats[0]}`] = {};
-    locations[`i${stats[0]}`].group_power = stats[1];
+    locations[`i${stats[0]}`].bul = stats[1];
+    locations[`i${stats[0]}`].gun = stats[1];
     locations[`i${stats[0]}`].fire = stats[2][0];
     locations[`i${stats[0]}`].el = stats[2][1];
     locations[`i${stats[0]}`].chem = stats[2][2];
@@ -8,12 +12,14 @@ export const Location_stats = (stats) => {
     locations[`i${stats[0]}`].tear = stats[3][0];
     locations[`i${stats[0]}`].hit = stats[3][1];
     locations[`i${stats[0]}`].rad = stats[4];
+    console.log(locations)
 }
 //[9, group_power, [fire, el, chem, exp], [tear, hit], rad]];
 //['Ожог', 'Электорошок', 'Удар', 'Разрыв', 'Радиация', 'Хим. ожог', 'Взрыв', 'Пулестойкость', 'Стоимость']
 export let locations = {}
 export let player = {
 set_null: () => {  
+    player.gun = 0;
     ['fire', 'el', 'hit', 'tear', 'rad', 'chem', 'exp', 'bul'].map((param) => {
         ['suit_', 'art1_', 'art2_', 'art3_', 'art4_', 'art5_'].map((part) => player[`${part}${param}`] = 0)
     })
@@ -70,4 +76,46 @@ export const Player_stats = (item, stats) => {
         ['suit_', 'art1_', 'art2_', 'art3_', 'art4_', 'art5_'].map((player[`${param}`]=0, (part) => player[`${param}`] += player[`${part}${param}`]))
     });
     console.log(player)
+}
+
+export const Compare = (player, location) => {
+    //нужно узнать какие показатели следует брать во внимание в этой локации
+    //сравнить
+    //узнать сколько и чего не хватает
+    //посчитать индекс готовности
+    //дать советы
+
+    //проверка на пустоту параметра
+    ['fire', 'el', 'hit', 'tear', 'rad', 'chem', 'exp', 'bul', 'gun'].map((param) => {
+        return (player[param] == undefined)?(player[param] = 0):('ok');
+    })
+    console.log(player, location)
+    let need = [];
+    let progress = [];
+    let i = 0;
+    let ready = ['fire', 'el', 'hit', 'tear', 'rad', 'chem', 'exp', 'bul', 'gun'].reduce((accum, param) => {
+        //return(player[param] >= location[param])?(accum + 100/9):((need[param] = location[param] - player[param]), i++, (progress[i] = [], progress[i][0] = need[param]/location[param]*100), progress[i][1] = param, progress[i][2] = need[param], (accum + progress[i]/9));
+        if(player[param] >= location[param]){
+            console.log(2)
+            return accum + 100/9;
+        } else {
+            need[i] = [param, location[param] - player[param]];
+            progress = (location[param] - need[i][1])/location[param]*100;
+            console.log(progress)
+            i++;
+            return accum + progress/9;
+        }
+    }, 0);
+
+    ready = (''+ready).replace(/\.\d+/, '')
+    let result = need.reduce((accum, curr) => {
+        return (accum + ([['fire', 'Ожог'], ['el', 'Электорошок'], ['hit', 'Удар'], ['tear', 'Разрыв'], ['rad', 'Радиация'], ['chem', 'Хим. ожог'], ['exp', 'Взрыв'], ['bul', 'Пулестойкость'], ['gun', 'Мощность оружия']].map((param) => {
+            if (curr[0] == param[0]) {
+                return (`Поднять параметр "${param[1]}" на ${curr[1]}% <br></br>`);
+            }
+        })))
+    }, '')
+    let print = `Готовность ${ready}%<br></br>Для успешного прохождения локации следует: <br></br>${result.replace(/\,/g, '')}`;
+    document.write(print)
+    return print;
 }

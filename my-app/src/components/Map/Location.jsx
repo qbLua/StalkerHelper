@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 import '../../css/Location.css';
 import { Location_stats } from '../Logics/Logics.js';
+import { Take_location } from '../Take';
 
 const Location = (props) => {
     Location_stats(props.stats);
@@ -91,7 +92,7 @@ const Location = (props) => {
                 </tbody>
             </table>
         </div>
-        <button className="btn">Select</button>
+        <button className="btn" onClick={()=>Take_location(`i${props.stats[0]}`)}>Select</button>
     </div>
    );
 }
