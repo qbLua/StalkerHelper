@@ -5,8 +5,13 @@ import '../../css/Bag_item.css';
 const Bag_item = (props) => {
     let value = 0;
         const Minus = () => {
-            value--;
-            document.getElementById(`val${props.id}`).textContent = `  ${value}  `;
+            if (value > 0) {
+                value--;
+                document.getElementById(`val${props.id}`).textContent = `  ${value}  `;
+            } else {
+                value = 0;
+                document.getElementById(`val${props.id}`).textContent = `  0  `;
+            }
         }
 
         const Plus = () => {
