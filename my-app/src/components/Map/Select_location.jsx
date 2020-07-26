@@ -13,7 +13,7 @@ const Select_location = () => {
     const loc9 = ['ЧАЭС', 'чаэс', 'Высокая', 'red', ['Военные', '«Монолит»', '«О-Сознание»'], ['Снорк'], ['Телепорт', 'Трамплин', 'Воронка', 'Карусель', 'Электра', 'Зона ЭМИ'], 'Высокая', 'ЧАЭС (Чернобыльская атомная электростанция) — атомная электростанция, построенная в 1977 году. Бывшая атомная станция, о которой хоть раз слышал каждый. Это самое сердце Зоны. Если верить легендам, где-то там находится некая аномалия, способная выполнить любое желание — её называют Монолитом.', [9, 100, [0, 30, 0, 60], [40, 0], 100]];
     
     return (
-        <div>
+        <div className="container">
             <Location name={loc1[0]} img={loc1[1]} lvl={loc1[2]} color={loc1[3]} groups={loc1[4]} mutants={loc1[5]} anomalies={loc1[6]} radiation={loc1[7]} desc={loc1[8]} stats={loc1[9]} />
             <Location name={loc2[0]} img={loc2[1]} lvl={loc2[2]} color={loc2[3]} groups={loc2[4]} mutants={loc2[5]} anomalies={loc2[6]} radiation={loc2[7]} desc={loc2[8]} stats={loc2[9]} />
             <Location name={loc3[0]} img={loc3[1]} lvl={loc3[2]} color={loc3[3]} groups={loc3[4]} mutants={loc3[5]} anomalies={loc3[6]} radiation={loc3[7]} desc={loc3[8]} stats={loc3[9]} />

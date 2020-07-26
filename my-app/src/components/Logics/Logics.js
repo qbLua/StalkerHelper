@@ -1,6 +1,3 @@
-import React from 'react';
-import Result from '../Result';
-
 export const Location_stats = (stats) => {
     locations[`i${stats[0]}`] = {};
     locations[`i${stats[0]}`].bul = stats[1];
@@ -114,8 +111,22 @@ export const Compare = (player, location) => {
                 return (`Поднять параметр "${param[1]}" на ${curr[1]}% <br></br>`);
             }
         })))
-    }, '')
-    let print = `Готовность ${ready}%<br></br>Для успешного прохождения локации следует: <br></br>${result.replace(/\,/g, '')}`;
-    document.write(print)
+    }, '');
+    let go = 'onClick={()=>Back()}';
+    let print = `   Готовность ${ready}%<br></br>Для успешного прохождения локации следует: <br></br>${result.replace(/\,/g, '')} <br></br><div id='btn'></div>`;
+    document.write(print);
+    let btn = document.createElement('button');
+    btn.addEventListener("click", function(){
+        console.log(111)
+        window.location = (''+window.location).split('').slice(0, (window.location).length - 3) + 'character';
+      });
+    btn.textContent = 'Сменить снаряжение';
+    let btnId = document.getElementById('btn');
+    document.body.insertBefore(btn, btnId);
+    document.body.style.background = '#161616';
+    document.body.style.color = '#c9c9c9';
+    btn.style.backgroundColor="#191919";
+    btn.style.color = '#8b8e88';
+    btn.style.border = '2px solid #8b8e88';
     return print;
 }

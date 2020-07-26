@@ -18,3 +18,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+A {
+  text-decoration: none;
+  color: #8b8e88;
+}
+A:visited {
+  color: #8b8e88; /* Цвет посещенных ссылок */
+ }
