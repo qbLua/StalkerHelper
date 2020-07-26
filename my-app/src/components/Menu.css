@@ -6,3 +6,17 @@
   .Menu-list a {
     text-decoration: none;
   }
+
+  .Menu {
+    display: flex;
+    justify-content: center;
+  }
+  .Menu li {
+    font-weight: bold;
+    width: 150px;
+    font-style: 24px;
+    margin-bottom: 20px;
+    background-color:#191919;
+    color: #8b8e88;
+    border: 2px solid #8b8e88;
+  }

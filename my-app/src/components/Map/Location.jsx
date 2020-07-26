@@ -92,7 +92,9 @@ const Location = (props) => {
                 </tbody>
             </table>
         </div>
-        <button className="btn" onClick={()=>Take_location(`i${props.stats[0]}`)}>Select</button>
+        <div className="btn-flex">
+            <button className="btn" onClick={()=>Take_location(`i${props.stats[0]}`)}>Отправиться сюда</button>
+        </div>
     </div>
    );
 }

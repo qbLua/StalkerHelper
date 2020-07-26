@@ -21,7 +21,7 @@ const Select_item = (props) => {
         </div>
       </div>
       <div className="select_item_btn">
-        <button onClick={()=>Take(`${props.slot}_img`, props.img, props.slot, props.values)}>Take this</button>
+        <button onClick={()=>Take(`${props.slot}_img`, props.img, props.slot, props.values)}>Взять</button>
       </div>
     </div>
     );

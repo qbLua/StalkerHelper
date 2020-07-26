@@ -10,7 +10,7 @@ const Item = (props) => {
                 </NavLink>
             </div>
             <div className="Item-btn">
-                <NavLink to={`/${props.btn}`}>Select</NavLink>
+                <NavLink to={`/${props.btn}`}>Выбрать</NavLink>
             </div>
         </div>
     );
