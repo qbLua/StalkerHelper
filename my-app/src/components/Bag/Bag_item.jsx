@@ -4,19 +4,20 @@ import '../../css/Bag_item.css';
 
 const Bag_item = (props) => {
     let value = 0;
+    let valElem = React.createRef();
         const Minus = () => {
             if (value > 0) {
                 value--;
-                document.getElementById(`val${props.id}`).textContent = `  ${value}  `;
+                valElem.current.textContent = `  ${value}  `;
             } else {
                 value = 0;
-                document.getElementById(`val${props.id}`).textContent = `  0  `;
+                valElem.current.textContent = `  ${value}  `;
             }
         }
 
         const Plus = () => {
             value++;
-            document.getElementById(`val${props.id}`).textContent = `  ${value}  `;
+            valElem.current.textContent = `  ${value}  `;
         }
         return(
             <div className='bag_item'>
@@ -24,7 +25,7 @@ const Bag_item = (props) => {
                     <img src={require(`../../img/${props.img}.png`)}></img>
                 </div>
                 <div className='btn'>
-                <button onClick={()=>Minus()}> - </button><span id={`val${props.id}`}>  {value}  </span><button onClick={()=>Plus()}> + </button>
+                <button onClick={()=>Minus()}> - </button><span ref={valElem}>  {value}  </span><button onClick={()=>Plus()}> + </button>
                 </div>
             </div>
         );

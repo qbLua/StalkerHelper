@@ -1,65 +1,14 @@
 import React from 'react';
 import './Artefacts_select.css'
 import Select_item from '../Select_item';
+import Artefacts_storage from './Artefacts_storage';
 
 const Artefacts_select = (props) => {
-    const params = ['Здоровье', 'Выносливость', 'Удар', 'Разрыв', 'Пулестойкость', 'Электрошок', 'Кровотечение', 'Ожог', 'Хим. ожог', 'Радиация', 'Стоимость'];
-    const values_1 = ['', '+36', '', '', '', '10', '', '', '', '', '1000'];
-    const values_2 = ['', '+73', '', '', '', '10', '', '', '', '', '2500'];
-    const values_3 = ['', '+109', '', '', '', '10', '', '', '', '', '5000'];
-    const values_4 = ['+200%', '', '-10%', '-10%', '-10%', '', '', '', '', '', '1000'];
-    const values_5 = ['+400%', '', '-10%', '-10%', '-10%', '', '', '', '', '', '2500'];
-    const values_6 = ['+600%', '', '-10%', '-10%', '-10%', '', '', '', '', '', '5000'];
-    const values_7 = ['', '', '', '', '', '', '+133%', '-10%', '-10%', '', '1000'];
-    const values_8 = ['', '', '', '', '', '', '+267%', '-10%', '-10%', '', '2500'];
-    const values_9 = ['', '', '', '', '', '', '+400%', '-10%', '-10%', '', '5000'];
-    const values_10 = ['', '', '', '', '+2%', '', '', '', '', '+5%', '1000'];
-    const values_11 = ['', '', '', '', '+3%', '', '', '', '', '+5%', '2500'];
-    const values_12 = ['', '', '', '', '+5%', '', '', '', '', '+5%', '5000'];
-    const values_13 = ['', '', '', '+2%', '', '', '', '', '', '+5%', '1000'];
-    const values_14 = ['', '', '', '+3%', '', '', '', '', '', '+5%', '2500'];
-    const values_15 = ['', '', '', '+5%', '', '', '', '', '', '+5%', '5000'];
-    const values_16 = ['', '', '', '+5%', '', '', '', '', '', '', '5000'];
-    const values_17 = ['', '', '', '', '', '', '-100%', '', '', '-10%', '1000'];
-    const values_18 = ['', '', '', '', '', '', '-100%', '', '', '-20%', '2500'];
-    const values_19 = ['', '', '', '', '', '', '-100%', '', '', '-30%', '5000'];
-    const values_20 = ['', '-18', '', '', '', '', '', '', '', '-10%', '1000'];
-    const values_21 = ['', '-18', '', '', '', '', '', '', '', '-20%', '2500'];
-    const values_22 = ['', '-18', '', '', '', '', '', '', '', '-30%', '5000'];
-    const values_23 = ['', '', '', '', '', '', '', '+30%', '', '', '5000'];
-    const values_24 = ['', '', '', '', '', '', '', '', '+30%', '', '5000']; 
-    const values_25 = ['', '', '+30%', '', '', '', '', '', '', '', '5000'];
-    const values_26 = ['', '', '', '', '', '+30%', '', '', '', '', '5000'];
-   
-    
+    let as = Artefacts_storage();
+    as[1] = as[1].map((value) => <Select_item name={value[0]} img={value[1]} params={as[0]} values={value[2]} slot={`art${props.slot}`} />)
     return (
         <div>
-            <Select_item name='Бенгальский огонь' img='Бенгальский_огонь(ico)' params={params}  values={values_1} slot={`art${props.slot}`} />
-            <Select_item name='Вспышка' img='Вспышка(ico)' params={params}  values={values_2} slot={`art${props.slot}`} />
-            <Select_item name='Лунный свет' img='Лунный_свет(ico)' params={params}  values={values_3} slot={`art${props.slot}`} />
-            <Select_item name='Кровь камня' img='Кровь_камня(ico)' params={params}  values={values_4} slot={`art${props.slot}`} />
-            <Select_item name='Ломоть мяса' img='Ломоть_мяса(ico)' params={params}  values={values_5} slot={`art${props.slot}`} />
-            <Select_item name='Душа' img='Душа(ico)' params={params}  values={values_6} slot={`art${props.slot}`} />
-            <Select_item name='Слизь' img='Слизь(ico)' params={params}  values={values_7} slot={`art${props.slot}`} />
-            <Select_item name='Слизняк' img='Слизняк(ico)' params={params}  values={values_8} slot={`art${props.slot}`} />
-            <Select_item name='Слюда' img='Слюда(ico)' params={params}  values={values_9} slot={`art${props.slot}`} />
-            <Select_item name='Медуза' img='Медуза(ico)' params={params}  values={values_10} slot={`art${props.slot}`} />
-            <Select_item name='Каменный цветок' img='Каменный_цветок(ico)' params={params}  values={values_11} slot={`art${props.slot}`} />
-            <Select_item name='Ночная звезда' img='Ночная_звезда(ico)' params={params}  values={values_12} slot={`art${props.slot}`} />
-            <Select_item name='Выверт' img='Выверт(ico)' params={params}  values={values_13} slot={`art${props.slot}`} />
-            <Select_item name='Грави' img='Грави(ico)' params={params}  values={values_14} slot={`art${props.slot}`} />
-            <Select_item name='Золотая рыбка' img='Золотая_рыбка(ico)' params={params}  values={values_15} slot={`art${props.slot}`} />
-            <Select_item name='Колобок' img='Колобок(ico)' params={params}  values={values_16} slot={`art${props.slot}`} />
-            <Select_item name='Колючка' img='Колючка(ico)' params={params}  values={values_17} slot={`art${props.slot}`} />
-            <Select_item name='Кристальная колючка' img='Кристальная_колючка(ico)' params={params}  values={values_18} slot={`art${props.slot}`} />
-            <Select_item name='Морской ёж' img='Морской_ёж(ico)' params={params}  values={values_19} slot={`art${props.slot}`} />
-            <Select_item name='Капли' img='Капли(ico)' params={params}  values={values_20} slot={`art${props.slot}`} />
-            <Select_item name='Огненный шар' img='Огненный_шар(ico)' params={params}  values={values_21} slot={`art${props.slot}`} />
-            <Select_item name='Кристалл' img='Кристалл(ico)' params={params}  values={values_22} slot={`art${props.slot}`} />
-            <Select_item name='Пустышка' img='Пустышка(ico)' params={params}  values={values_23} slot={`art${props.slot}`} />
-            <Select_item name='Плёнка' img='Плёнка(ico)' params={params}  values={values_24} slot={`art${props.slot}`} />
-            <Select_item name='Пружина' img='Пружина(ico)' params={params}  values={values_25} slot={`art${props.slot}`} />
-            <Select_item name='Батарейка' img='Батарейка(ico)' params={params}  values={values_26} slot={`art${props.slot}`} />
+            {as[1]}
         </div>
     );
 }

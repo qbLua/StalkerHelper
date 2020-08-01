@@ -1,16 +1,16 @@
 import React from 'react';
-import './Menu.css'
-import {NavLink, Route} from "react-router-dom";
-import Character from './Character/Character';
+import '../css/Menu.css'
+import { NavLink, Route } from "react-router-dom";
+
 
 const Menu = () => {
-    return(
+  return (
     <div className="Menu">
-        <ul className="Menu-list">
+      <ul className="Menu-list">
         <li className="Menu-map">
           <NavLink to="/map">Локации</NavLink>
         </li>
-        <li className="Menu-character"> 
+        <li className="Menu-character">
           <NavLink to="/character">Персонаж</NavLink>
         </li>
         <li className="Menu-bag">
@@ -18,7 +18,7 @@ const Menu = () => {
         </li>
       </ul>
     </div>
-    );
+  );
 }
 
 export default Menu;
