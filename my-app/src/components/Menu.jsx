@@ -1,6 +1,9 @@
 import React from 'react';
 import '../css/Menu.css'
 import { NavLink, Route } from "react-router-dom";
+import Character from './Character/Character';
+import Select_location from './Map/Select_location';
+import Bag from './Bag/Bag';
 
 
 const Menu = () => {

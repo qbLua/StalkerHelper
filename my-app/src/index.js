@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { player } from './components/Logics/Logics';
 import firebase from "firebase";
+import storage from './redux/Storage.js';
 player.set_null();
 
 const firebaseConfig = {
@@ -20,7 +21,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App storage={storage} on={2}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
