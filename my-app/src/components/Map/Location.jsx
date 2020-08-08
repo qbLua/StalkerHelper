@@ -48,7 +48,7 @@ const Location = (props) => {
 
     const anomalies = (props.anomalies).map((anomaly) => { 
         if (anomaly == props.anomalies[0]) {
-           return (
+            return (
             <tr>
                 <td>Аномалии:</td>
                 <td className="space"></td>
@@ -93,7 +93,9 @@ const Location = (props) => {
             </table>
         </div>
         <div className="btn-flex">
-            <button className="btn" onClick={()=>Take_location(`i${props.stats[0]}`)}>Отправиться сюда</button>
+        <NavLink to={`/result/${props.stats[0]}`}>
+            <button className="btn" >Отправиться сюда</button>
+        </NavLink>
         </div>
     </div>
    );

@@ -1,17 +1,17 @@
 import React from 'react';
-import './Character.css'
-import Item from '../Item';
+import '../../css/Character.css'
+import Item from './Item';
 import Store_character from './Store_character';
+import Back from '../Back';
 
 const Character = (props) => {
-  console.log(props.on)
   return(
       <Store_character.Consumer>
         {
           (value) => {
             return (
             <div className="Character">
-              
+              <Back />
               <div className="Character_gun">
                   <Item img={value.gun_img} btn="character/gun_select" />
               </div>

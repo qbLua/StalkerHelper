@@ -1,9 +1,22 @@
-.btn {
+.bag_btn {
     border: none;
     margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .bag_item {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.bag_item img {
+    height: 50px;
+}
+
+.bag_btn span {
+    padding-left: 10px;
+    padding-right: 10px;
 }

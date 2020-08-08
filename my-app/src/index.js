@@ -19,13 +19,18 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-ReactDOM.render(
-  <React.StrictMode>
-    <App storage={storage} on={2}/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+export const rerenderTree = () => {
+  ReactDOM.render(
+    <React.StrictMode>
+      <App storage={storage} />
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+}
 
+let database = firebase.database();
+
+rerenderTree();
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

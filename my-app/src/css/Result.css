@@ -1,0 +1,40 @@
+.params div {
+    text-align: left;
+    border-bottom: #8b8e88 solid 1px;
+    padding-left: 8%;
+}
+
+.result-container {
+    margin: 5% 33% 0% 33%;
+}
+
+@media screen and (max-width: 600px) {
+    .result-container {
+        margin: 5% 0% 0% 0%;
+    }
+}
+@media screen and (min-width: 600px) {
+    .result-container {
+        margin: 5% 0% 0% 0%;
+    }
+}
+@media screen and (min-width: 730px) {
+    .result-container {
+        margin: 5% 20% 0% 20%;
+    }
+}
+@media screen and (min-width: 860px) {
+    .result-container {
+        margin: 5% 25% 0% 25%;
+    }
+}
+@media screen and (min-width: 990px) {
+    .result-container {
+        margin: 5% 30% 0% 30%;
+    }
+}
+@media screen and (min-width: 1120px) {
+    .result-container {
+        margin: 5% 33% 0% 33%;
+    }
+}

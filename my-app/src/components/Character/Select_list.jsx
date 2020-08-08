@@ -1,5 +1,6 @@
 import React from 'react';
 import Select_item from './Select_item';
+import Back from '../Back';
 
 const Select_list = (props) => {
     /*
@@ -24,6 +25,7 @@ const Select_list = (props) => {
     list[1] = list[1].map((value) => <Select_item name={value[0]} img={value[1]} params={list[0]} values={value[2]} slot={props.slot} />)
     return (
         <div>
+            <Back />
             {list[1]}
         </div>
     );

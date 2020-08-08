@@ -24,8 +24,8 @@ const Bag_item = (props) => {
                 <div>
                     <img src={require(`../../img/${props.img}.png`)}></img>
                 </div>
-                <div className='btn'>
-                <button onClick={()=>Minus()}> - </button><span ref={valElem}>  {value}  </span><button onClick={()=>Plus()}> + </button>
+                <div className='bag_btn'>
+                <button onClick={()=>Minus()}> - </button><span ref={valElem}>{value}</span><button onClick={()=>Plus()}> + </button>
                 </div>
             </div>
         );

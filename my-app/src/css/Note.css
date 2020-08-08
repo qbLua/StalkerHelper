@@ -1,0 +1,23 @@
+.note-item {
+    margin: 5% 20% 0% 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: solid 2px #ababab;
+    border-radius: 7px;
+    padding: 2%;
+    background-color: #222;
+}
+
+.note-item h3, .note-item p {
+    margin: 0%;
+}
+
+.note-item h3 {
+    color: #ababab;
+}
+
+.date {
+    color: #6b6b6b;
+    font-size: 80%;
+}

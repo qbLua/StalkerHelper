@@ -1,5 +1,5 @@
 import React from 'react';
-import './Select_item.css'
+import '../../css/Select_item.css'
 import Take from '../Take'
 
 const Select_item = (props) => {

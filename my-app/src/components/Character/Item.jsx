@@ -6,7 +6,7 @@ const Item = (props) => {
         <div className="Item">
             <div className="Item-img">
                 <NavLink to={`/${props.btn}`}>
-                     <img src={require(`../img/${props.img}.png`)}></img>
+                     <img src={require(`../../img/${props.img}.png`)}></img>
                 </NavLink>
             </div>
             <div className="Item-btn">

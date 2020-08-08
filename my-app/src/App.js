@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Menu from './components/Menu';
 import { BrowserRouter, Route } from 'react-router-dom';
@@ -8,9 +7,10 @@ import No404 from './components/No404';
 import Select_location from './components/Map/Select_location';
 import Bag from './components/Bag/Bag';
 import Select_list from './components/Character/Select_list';
+import Note_list from './components/Note/Note_list';
+import Result from './components/Result/Result';
 
 function App(props) {
-console.log(props.on)
   return (
     <BrowserRouter>
         <div className="App">
@@ -28,6 +28,12 @@ console.log(props.on)
             <No404 />} />
         <Route exact path="/map" render={() => <Select_location locations={props.storage.data.locations} />} />
         <Route exact path="/bag" render={() => <Bag bag={props.storage.data.bag} />} />
+        <Route exact path="/note" render={() => <Note_list notes={props.storage.data.notes} add={props.storage.addNote} context={props.storage} />} />
+        <Route path='/result'
+            render = { () =>
+              [1, 2, 3, 4, 5, 6, 7, 8, 9].map((loc) => {
+                return (window.location + '').slice(-2) == `/${loc}` ? <Result location={loc} locations={props.storage.data.locations} /> : ''
+              })} />
         </div>
     </BrowserRouter>
   );

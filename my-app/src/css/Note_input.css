@@ -1,0 +1,25 @@
+.note-form {
+    flex-direction: column;
+    margin: 30px 24% 0% 24%;
+    border: solid 2px #ababab;
+    border-radius: 7px;
+    padding-bottom: 1%;
+    background-color: #222;
+}
+
+.note-form textarea, input {
+    width: 90%;
+    margin-top: 2%;
+    background-color: #ababab;
+    box-shadow: brown;
+}
+
+.note-form textarea {
+    height: 90px;
+}
+
+.note-form button {
+    width: 40%;
+    border: solid 2px #ababab;
+    border-radius: 7px;
+}
