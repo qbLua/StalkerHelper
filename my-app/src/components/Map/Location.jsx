@@ -5,6 +5,7 @@ import { Location_stats } from '../Logics/Logics.js';
 import { Take_location } from '../Take';
 
 const Location = (props) => {
+    //Компонента рабтает так же как и Select_item.jsx, но рисует отдельную локацию
     Location_stats(props.stats);
     const groups = (props.groups).map((group) => { 
         if (group == props.groups[0]) {

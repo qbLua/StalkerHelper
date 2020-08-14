@@ -5,36 +5,36 @@
 }
 
 .result-container {
-    margin: 5% 33% 0% 33%;
+    margin: 5% 33% 5% 33%;
 }
 
 @media screen and (max-width: 600px) {
     .result-container {
-        margin: 5% 0% 0% 0%;
+        margin: 5% 0% 5% 0%;
     }
 }
 @media screen and (min-width: 600px) {
     .result-container {
-        margin: 5% 0% 0% 0%;
+        margin: 5% 0% 5% 0%;
     }
 }
 @media screen and (min-width: 730px) {
     .result-container {
-        margin: 5% 20% 0% 20%;
+        margin: 5% 20% 5% 20%;
     }
 }
 @media screen and (min-width: 860px) {
     .result-container {
-        margin: 5% 25% 0% 25%;
+        margin: 5% 25% 5% 25%;
     }
 }
 @media screen and (min-width: 990px) {
     .result-container {
-        margin: 5% 30% 0% 30%;
+        margin: 5% 30% 5% 30%;
     }
 }
 @media screen and (min-width: 1120px) {
     .result-container {
-        margin: 5% 33% 0% 33%;
+        margin: 5% 33% 5% 33%;
     }
 }

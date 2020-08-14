@@ -3,7 +3,10 @@ import '../../css/Character.css'
 import Item from './Item';
 import Store_character from './Store_character';
 import Back from '../Back';
-
+/*
+Разметка экрана персонажа
+Контекст нужен для того, чтобы изменять изображения ячеек после их выбора предмета
+*/
 const Character = (props) => {
   return(
       <Store_character.Consumer>
